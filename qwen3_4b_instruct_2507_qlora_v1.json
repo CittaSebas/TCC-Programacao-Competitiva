@@ -1,0 +1,79 @@
+{
+  "experiment": "qwen3_4b_instruct_2507_qlora_v1",
+  "timestamp": "2026-05-10 18:29:30",
+  "eval_samples": 200,
+  "model": {
+    "base": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "lora_r": 32,
+    "lora_alpha": 32,
+    "lora_dropout": 0,
+    "max_seq_length": 512,
+    "train_samples": 4013,
+    "epochs": 1,
+    "learning_rate": 0.0002
+  },
+  "metrics": {
+    "f1_micro": 0.5854,
+    "f1_macro": 0.582,
+    "precision_micro": 0.6186,
+    "recall_micro": 0.5556,
+    "precision_mean": 0.6383,
+    "recall_mean": 0.5812,
+    "exact_match": 0.225
+  },
+  "stats": {
+    "avg_true_tags": 1.62,
+    "avg_pred_tags": 1.46,
+    "overprediction": 0.21,
+    "coverage": 0.5812,
+    "unique_tags_in_eval": 5,
+    "never_predicted_count": 0,
+    "never_predicted_tags": []
+  },
+  "errors": {
+    "most_missed": [
+      [
+        "greedy",
+        38
+      ],
+      [
+        "math",
+        34
+      ],
+      [
+        "dp",
+        31
+      ],
+      [
+        "data structures",
+        21
+      ],
+      [
+        "implementation",
+        20
+      ]
+    ],
+    "most_extra": [
+      [
+        "implementation",
+        49
+      ],
+      [
+        "data structures",
+        17
+      ],
+      [
+        "greedy",
+        17
+      ],
+      [
+        "math",
+        15
+      ],
+      [
+        "dp",
+        13
+      ]
+    ]
+  }
+}

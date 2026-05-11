@@ -1,0 +1,99 @@
+{
+  "experiment": "qwen3_4b_instruct_2507_qlora_v2",
+  "timestamp": "2026-05-11 01:26:12",
+  "eval_samples": 1249,
+  "model": {
+    "base": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "lora_r": 32,
+    "lora_alpha": 32,
+    "lora_dropout": 0,
+    "max_seq_length": 512,
+    "train_samples": 4459,
+    "epochs": 3,
+    "learning_rate": 0.0002
+  },
+  "metrics": {
+    "f1_micro": 0.5969,
+    "f1_macro": 0.2247,
+    "precision_micro": 0.6082,
+    "recall_micro": 0.586,
+    "precision_mean": 0.6526,
+    "recall_mean": 0.6295,
+    "exact_match": 0.2738
+  },
+  "stats": {
+    "avg_true_tags": 1.62,
+    "avg_pred_tags": 1.57,
+    "overprediction": 0.237,
+    "coverage": 0.6295,
+    "unique_tags_in_eval": 13,
+    "never_predicted_count": 0,
+    "never_predicted_tags": []
+  },
+  "errors": {
+    "most_missed": [
+      [
+        "greedy",
+        209
+      ],
+      [
+        "math",
+        192
+      ],
+      [
+        "dp",
+        186
+      ],
+      [
+        "data structures",
+        127
+      ],
+      [
+        "implementation",
+        126
+      ]
+    ],
+    "most_extra": [
+      [
+        "implementation",
+        294
+      ],
+      [
+        "data structures",
+        133
+      ],
+      [
+        "math",
+        119
+      ],
+      [
+        "greedy",
+        118
+      ],
+      [
+        "dp",
+        94
+      ],
+      [
+        "this path has an amount of b j equal to 1 and the prefix of length 2 has an amount of b j equal to 1 3 4 which is more than 8\n\ndata structures",
+        1
+      ],
+      [
+        "greedy\n\nyou are given a sequence of n integers a 1 a",
+        1
+      ],
+      [
+        "textbf 1 textbf 4 textbf 5 textbf 6 so the final array is 3 2 1 4 5 6 petya wants to know the number of possible final arrays. the answer can be very large so print it modulo 10^",
+        1
+      ],
+      [
+        "in increasing order the problem is mathematically equivalent to minimizing the sum of the resistors subject to the constraint that the effective resistance of the circuit is r the solution is to use the method of lagrange multipliers the method of lagrange multipliers is a strategy for finding the local maxima and",
+        1
+      ],
+      [
+        "compute f s l i s l i 1 ldots s r i s r i 1 and the answer is the number of candies we get from the sequence s l i s l i 1 ldots s r i s r i 1\n\nconstraints: 1 le n le",
+        1
+      ]
+    ]
+  }
+}
