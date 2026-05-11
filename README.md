@@ -1,2 +1,3 @@
-# TCC---Desenvolvimento-IA
-Repositorio para salvar coisas relacionadas ao TCC
+# DESENVOLVIMENTO DE UM AGENTE DE INTELIGÊNCIA ARTIFICIAL PARA DETERMINAR TRILHAS DE ESTUDO PARA QUESTÕES DE PROGRAMACÃO COMPETITIVA
+
+Repositorio criado para guradar possivelmente QLoRA, resultados de treinamentos.
